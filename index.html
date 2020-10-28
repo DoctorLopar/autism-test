@@ -361,10 +361,10 @@ function checkbox() {
 function checkbox() {
 	for (vopros = 1; vopros <= 57; vopros++) {
 		if (getRandomInt(2) == 1) {
-			$("input[name=vop"+vopros+"]").prop("unchecked",true);
+			$("input[name=vop"+vopros+"]").prop("checked",false);
 		}
 		else {
-			$("input[name=vop"+vopros+"]").prop("unchecked",true);
+			$("input[name=vop"+vopros+"]").prop("checked",false);
 		}
 	}
 }
