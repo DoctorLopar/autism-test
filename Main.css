@@ -1,0 +1,13 @@
+table {
+	max-width: 600px;
+}
+td {
+	min-width: 100px;
+	max-height: 20px;
+}
+tr {
+	max-height: 20px;
+}
+.result {
+	max-width: 600px;
+}
