@@ -237,7 +237,7 @@
 </tr>
 		</table>
 	<p><input type="submit" value="Узнать че там у меня" onclick="lopar();"></p>
-	<p><input type="submit" value="Поставить чекбоксы рандом" onclick="checkbox();"></p>
+	<p><input type="submit" value="Очистить ответы" onclick="checkbox();"></p>
 	</body>
 <script>
 function lopar(){
@@ -344,7 +344,7 @@ function lopar(){
 </script>
 <script>
 //заполнение чекбоксов рандомными ответами
-function getRandomInt(max) {
+/*function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 function checkbox() {
@@ -354,6 +354,17 @@ function checkbox() {
 		}
 		else {
 			$("input[name=vop"+vopros+"][value='no']").prop("checked",true);
+		}
+	}
+}*/
+	//снятие чекбоксов
+function checkbox() {
+	for (vopros = 1; vopros <= 57; vopros++) {
+		if (getRandomInt(2) == 1) {
+			$("input[name=vop"+vopros+"]").prop("unchecked",true);
+		}
+		else {
+			$("input[name=vop"+vopros+"]").prop("unchecked",true);
 		}
 	}
 }
